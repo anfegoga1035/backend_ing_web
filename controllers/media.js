@@ -37,7 +37,7 @@ const createMedia = async (req = request, res = response) => {
 /**
  * Consultar todos los medios
  */
-const getMedias = async (req, res) => {
+const getMedias = async (req = request, res = response) => {
     try {
         const { estado } = req.query;
 
