@@ -1,5 +1,5 @@
 const { Router } = require('express');
-const { createMedia,getMedias } = require('../controllers/media');
+const { createMedia, getMedias } = require('../controllers/media');
 
 const router = Router();
 

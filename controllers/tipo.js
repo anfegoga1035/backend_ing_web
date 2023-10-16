@@ -1,6 +1,8 @@
 const Tipo = require('../models/tipo');
 const { request, response } = require('express');
 
+//crear tipo
+
 const createTipo = async (req = request, res = response) => {
     const { nombre, descripcion } = req.body;
     try {
@@ -30,7 +32,7 @@ const createTipo = async (req = request, res = response) => {
 /**
  * Consultar todos los tipos
  */
-const getTipos = async (req, res) => {
+const getTipos = async (req = request, res = response) => {
     try {
         const { estado } = req.query;
 
